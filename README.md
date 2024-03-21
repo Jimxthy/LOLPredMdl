@@ -30,5 +30,8 @@ The columns that I am interested in are `'side'`, `'league'`, `'firstdragon'`, `
 First, I decided to keep only the relevant columns that were mentioned above. Secondly, I kept all of the rows that contained the team summaries after each game. This means that there are two rows per game, one row for each team that played in that one game. Next, I changed the values of `'firstdragon'`, `'firstbaron'`, and `'firstherald'` into booleans, which were originally just 1's and 0's. Lastly, I changed the `'side'` column into `'blueside'`, which just indicates whether a team was on the blue side of the map or red side of the map. The value is `True` if the team played on blue side, or `False` if they played on red side. 
 
 Here is the head of my `Lol_clean` data frame:
+
+
 | blueside | league | firstdragon | golddiffat15 | xpdiffat15 | csdiffat15 | killsat15 | teamkills | firstbaron | firstherald | heralds | elementaldrakes | barons | elders | result |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
 
