@@ -24,3 +24,8 @@ The columns that I am interested in are `side`, `league`, `firstdragon`, `golddi
 - `elders`: The number of elder dragons a team got
 - `result`: Whether a team won or lost
 
+# Data Cleaning and Exploratory Analysis
+
+## Data Cleaning
+First, I decided to keep only the relevant columns that were mentioned above. 
+
