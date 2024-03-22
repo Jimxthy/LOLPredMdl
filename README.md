@@ -39,3 +39,13 @@ Here is the head of my `Lol_clean` data frame:
 | True     | LCKC   | False       | -1763.0      | -906.0     | -22.0      | 1.0       | 3         | False      | True        | 1.0     | 1.0             | 0.0    | 0.0    | 0      |
 | False    | LCKC   | True        | 1763.0       | 906.0      | 22.0       | 3.0       | 16        | True       | False       | 1.0     | 4.0             | 2.0    | 0.0    | 1      |
 | True     | LPL    | NaN         | NaN          | NaN        | NaN        | NaN       | 13        | NaN        | NaN         | NaN     | NaN             | 1.0    | NaN    | 1      |
+
+## Univariate Analysis
+<iframe
+  src="assets/lol_fig1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+
