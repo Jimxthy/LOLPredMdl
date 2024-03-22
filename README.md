@@ -64,7 +64,54 @@ This is the distribution of kills on blue side compared to red side. It looks li
 | blueside        |      |       |       |       |       |
 | False           | 7.52 | 9.70  | 13.54 | 16.86 | 19.40 |
 | True            | 8.40 | 11.62 | 15.69 | 17.55 | 19.37 |
+
 This shows how blue side is able to get more kills on average compared to red team by the number of elemental drakes that they are able to secure. For example, when blue teams and red teams secure 2 dragons, blue side gets more kills on average compared to red team. 
+
+# Assessment of Missingness
+
+## NMAR Analysis
+I think that a lot of columns could be considered NMAR because a lot of the missing data needs to be written in by someone that manages the games. One such column would be the `'elders'` column, because teams usually secure elder dragons after one team secures 4 dragons. Usually, this would take around 30-45 minutes. In order to make this column MAR, it would be nice to have some information about when elder dragons become available, this way the missingness can depend on that column. 
+
+## Missing Dependency
+
+I wanted to explore whether the missingness in the `'firstbaron` column depends on the `'barons'` column. 
+<iframe
+  src="assets/missfig1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="assets/empks.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+I performed a permutation test with a significance level of 0.05. The test statistic that I used was the Kolmogorov-Smirnov statistic. The observed K-S statistic was 0.007. The p-value was 0.5. The missingness of the `'firstbaron'` does not depend on the `'barons'` column. 
+
+I wanted to explore whether the issingness in the `'firstbaron'` column depends on the `'league'` column. 
+<iframe
+  src="assets/missfig2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="assets/emptvd.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+I performed a permutation test with a significance level of 0.05. THe test statistic that I used was the total-variation distance. The observed TVD was 0.99. The p-value was 0. THe missingness of the `'firstbaron'` column depends on the `'league'` column. 
+
+
+
+
+
 
 
 
