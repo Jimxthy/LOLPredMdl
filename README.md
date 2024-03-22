@@ -32,7 +32,7 @@ First, I decided to keep only the relevant columns that were mentioned above. Se
 Here is the head of my `Lol_clean` data frame:
 
 
-| blueside | league | firstdragon | golddiffat15 | xpdiffat15 | csdiffat15 | killsat15 | teamkills | firstbaron | firstherald | heralds | elementaldrakes | barons | elders | result |
+|  blueside  |  league  |  firstdragon  |  golddiffat15  |  xpdiffat15  |  csdiffat15  |  killsat15  |  teamkills  |  firstbaron  |   firstherald  |  heralds  |  elementaldrakes  |  barons  |  elders  |  result  |
 |----------|--------|-------------|--------------|------------|------------|-----------|-----------|------------|-------------|---------|-----------------|--------|--------|--------|
 | True     | LCKC   | False       | 107.0        | -1617.0    | -23.0      | 5.0       | 9         | False      | True        | 2.0     | 1.0             | 0.0    | 0.0    | 0      |
 | False    | LCKC   | True        | -107.0       | 1617.0     | 23.0       | 6.0       | 19        | False      | False       | 0.0     | 3.0             | 0.0    | 0.0    | 1      |
