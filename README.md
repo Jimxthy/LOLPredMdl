@@ -1,6 +1,6 @@
 # League Of Legends Victory Prediction Model
 Project for DSC80 at UCSD 
-Names: Jimmy Huang 
+Name: Jimmy Huang 
 
 # Introduction
 My dataset is all of the professional League of Legends games played in 2022. The original dataset has 12 rows for each game that was played, 10 rows for each player and 2 rows for each team summary. There are over 100 columns in the data frame, including columns about the pick and bans during the drafting phase, information about the total gold each player earned and the total gold, and others. Competetive League of Legends is really popular, and players have several favorite teams. It would be nice if we could predict whether our favorite teams would win. 
@@ -132,18 +132,8 @@ The observed test statistic was 0.05, and the p-value was 0. This means we rejec
 
 # Framing a Prediction Problem
 
-I want to build a model that is able to predict whether a team will win by the 20 minute mark. I will be performing binary classification because the response variable that I am trying to predict is whether a team would win or lose. I chose thise response variable because players mostly care about the result, and the result of the game is the most interesting. The metric that I will be using to evaluate my model will be accuracy because I care more about the correct predictions instead of the false negatives and false positives. The features that I will use are information that are made available by the first 20 minutes. Some examples include `'firstdragon'` because a team usually secures at least one dragon by the 20 minute mark. 
+I want to build a model that is able to predict whether a team will win by the 20 minute mark. I will be performing binary classification because the response variable that I am trying to predict is whether a team would win or lose. I chose thise response variable because players mostly care about the result, and the result of the game is the most interesting. The metric that I will be using to evaluate my model will be accuracy because I care more about the correct predictions instead of the false negatives and false positives. The features that I will use are information that are made available by the first 20 minutes. Some examples include `'firstdragon'` because a team usually secures at least one dragon by the 20 minute mark. Additionally, for fitting my baseline and final models, I dropped all of the rows that contained `Nan`'s because it is hard to fill in these values since anything could happen in a game of League of Legends, and since I still have plenty of data still even with these dropped rows, I decided to just drop them. 
 
+# Baseline Model
 
-
-
-
-
-
-
-
-
-
-
-
-
+The estimator that I used was a `DecisionTreeClassifier()`. The features that I used in my model included `'blueside'`, `'firstdragon'`, `'golddiffat15'`, `'xpdiffat15'`, `'csdiffat15'`, `'killsat15'`, `'firstbaron'`, `'firstherald'`, and `'heralds'`.`'blueside'`, `'firstdragon'`, `'firstbaron'`, and `'firstherald'` are all nominal. The rest of the features are all quantitative. For my baseline model, I just simply fit a `DecisionTreeClassifier()` on my features, since all of them are either booleans, `1`'s and `0`'s, or numerical already. The training accuracy that I got was 1.0, while the testing accuracy was 0.77. This is not a good model because the testing accuracy was severely lower than my testing accuracy, indicating that the model was severely overfit to the training data and is not good at generalizing and predicting on unseen data. 
