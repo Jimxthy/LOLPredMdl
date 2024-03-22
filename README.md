@@ -92,7 +92,7 @@ I wanted to explore whether the missingness in the `'firstbaron` column depends 
   frameborder="0"
 ></iframe>
 
-I performed a permutation test with a significance level of 0.05. The test statistic that I used was the Kolmogorov-Smirnov statistic. The observed K-S statistic was 0.007. The p-value was 0.5. The missingness of the `'firstbaron'` does not depend on the `'barons'` column. 
+I performed a permutation test with a significance level of 0.05 and 500 simulations. The test statistic that I used was the Kolmogorov-Smirnov statistic. The observed K-S statistic was 0.007. The p-value was 0.5. The missingness of the `'firstbaron'` does not depend on the `'barons'` column. 
 
 I wanted to explore whether the issingness in the `'firstbaron'` column depends on the `'league'` column. 
 <iframe
@@ -109,7 +109,7 @@ I wanted to explore whether the issingness in the `'firstbaron'` column depends 
   frameborder="0"
 ></iframe>
 
-I performed a permutation test with a significance level of 0.05. THe test statistic that I used was the total-variation distance. The observed TVD was 0.99. The p-value was 0. THe missingness of the `'firstbaron'` column depends on the `'league'` column. 
+I performed a permutation test with a significance level of 0.05 and 500 simulations. The test statistic that I used was the total-variation distance. The observed TVD was 0.99. The p-value was 0. The missingness of the `'firstbaron'` column depends on the `'league'` column. 
 
 # Hypothesis Testing
 
@@ -128,7 +128,13 @@ The test statistic that I used was the difference in proportions between wins an
   frameborder="0"
 ></iframe>
 
-The observed test statistic was 0.05, and the p-value was 0. This means we reject the null hypothesis in favoring that blue side wins more often than red side. 
+The observed test statistic was 0.05, and the p-value was 0. This means we reject the null hypothesis in favor of that blue side wins more often than red side. Since we reject the null hypothesis, we believe that the games are favored towards blue side and that the distribution does not come from the population. 
+
+# Framing a Prediction Problem
+
+I want to build a model that is able to predict whether a team will win by the 20 minute mark. I will be performing binary classification because the response variable that I am trying to predict is whether a team would win or lose. I chose thise response variable because players mostly care about the result, and the result of the game is the most interesting. The metric that I will be using to evaluate my model will be accuracy because I care more about the correct predictions instead of the false negatives and false positives. The features that I will use are information that are made available by the first 20 minutes. Some examples include `'firstdragon'` because a team usually secures at least one dragon by the 20 minute mark. 
+
+
 
 
 
