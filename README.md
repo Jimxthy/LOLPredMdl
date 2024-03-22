@@ -59,6 +59,7 @@ This is the distribution of the number of dragons each team got each game played
 This is the distribution of kills on blue side compared to red side. It looks like blue side is able to get more kills than red side. 
 
 ## Interesting Aggregates
+
 | elementaldrakes | 0.0  | 1.0   | 2.0   | 3.0   | 4.0   |
 |-----------------|------|-------|-------|-------|-------|
 | blueside        |      |       |       |       |       |
