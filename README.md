@@ -48,4 +48,18 @@ Here is the head of my `Lol_clean` data frame:
   frameborder="0"
 ></iframe>
 
+This is the distribution of the number of dragons each team got each game played. Most teams were able to secure two dragons.
+
+## Bivariate Analysis
+<iframe
+  src="assets/lol_fig4.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+This is the distribution of kills on blue side compared to red side. It looks like blue side is able to get more kills than red side. 
+
+
+
 
