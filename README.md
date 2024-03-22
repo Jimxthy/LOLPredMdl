@@ -40,6 +40,7 @@ Here is the head of my `Lol_clean` data frame:
 | False    | LCKC   | True        | 1763.0       | 906.0      | 22.0       | 3.0       | 16        | True       | False       | 1.0     | 4.0             | 2.0    | 0.0    | 1      |
 | True     | LPL    | NaN         | NaN          | NaN        | NaN        | NaN       | 13        | NaN        | NaN         | NaN     | NaN             | 1.0    | NaN    | 1      |
 
+
 ## Univariate Analysis
 <iframe
   src="assets/lol_fig1.html"
@@ -67,6 +68,7 @@ This is the distribution of kills on blue side compared to red side. It looks li
 | True            | 8.40 | 11.62 | 15.69 | 17.55 | 19.37 |
 
 This shows how blue side is able to get more kills on average compared to red team by the number of elemental drakes that they are able to secure. For example, when blue teams and red teams secure 2 dragons, blue side gets more kills on average compared to red team. 
+
 
 # Assessment of Missingness
 
@@ -108,6 +110,28 @@ I wanted to explore whether the issingness in the `'firstbaron'` column depends 
 ></iframe>
 
 I performed a permutation test with a significance level of 0.05. THe test statistic that I used was the total-variation distance. The observed TVD was 0.99. The p-value was 0. THe missingness of the `'firstbaron'` column depends on the `'league'` column. 
+
+# Hypothesis Testing
+
+The question that I tried to answer was whether teams on blue side won more frequently than red side. To do this, I used only the information in my data frame where `'blueside'` was equal to `True`. Then, I randomly simulated whether that team won or lost. I randomly assigned them `1` for winning or `0` for losing. 
+
+**Null Hypothesis**: Blue side has the same chance to win or lose
+
+**Alternate Hypothesis**: Blue side has a higher chance to win
+
+The test statistic that I used was the difference in proportions between wins and losses. The level of significance that I used was 0.05. 
+
+<iframe
+  src="assets/hypothesistest.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+The observed test statistic was 0.05, and the p-value was 0. This means we reject the null hypothesis in favoring that blue side wins more often than red side. 
+
+
+
 
 
 
