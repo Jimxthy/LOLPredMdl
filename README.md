@@ -47,7 +47,6 @@ Here is the head of my `Lol_clean` data frame:
   height="600"
   frameborder="0"
 ></iframe>
-
 This is the distribution of the number of dragons each team got each game played. Most teams were able to secure two dragons.
 
 ## Bivariate Analysis
@@ -57,8 +56,15 @@ This is the distribution of the number of dragons each team got each game played
   height="600"
   frameborder="0"
 ></iframe>
-
 This is the distribution of kills on blue side compared to red side. It looks like blue side is able to get more kills than red side. 
+
+## Interesting Aggregates
+| elementaldrakes | 0.0  | 1.0   | 2.0   | 3.0   | 4.0   |
+|-----------------|------|-------|-------|-------|-------|
+| blueside        |      |       |       |       |       |
+| False           | 7.52 | 9.70  | 13.54 | 16.86 | 19.40 |
+| True            | 8.40 | 11.62 | 15.69 | 17.55 | 19.37 |
+This shows how blue side is able to get more kills on average compared to red team by the number of elemental drakes that they are able to secure. For example, when blue teams and red teams secure 2 dragons, blue side gets more kills on average compared to red team. 
 
 
 
