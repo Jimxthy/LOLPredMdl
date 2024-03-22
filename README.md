@@ -33,5 +33,9 @@ Here is the head of my `Lol_clean` data frame:
 
 
 | blueside | league | firstdragon | golddiffat15 | xpdiffat15 | csdiffat15 | killsat15 | teamkills | firstbaron | firstherald | heralds | elementaldrakes | barons | elders | result |
-|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
-
+|----------|--------|-------------|--------------|------------|------------|-----------|-----------|------------|-------------|---------|-----------------|--------|--------|--------|
+| True     | LCKC   | False       | 107.0        | -1617.0    | -23.0      | 5.0       | 9         | False      | True        | 2.0     | 1.0             | 0.0    | 0.0    | 0      |
+| False    | LCKC   | True        | -107.0       | 1617.0     | 23.0       | 6.0       | 19        | False      | False       | 0.0     | 3.0             | 0.0    | 0.0    | 1      |
+| True     | LCKC   | False       | -1763.0      | -906.0     | -22.0      | 1.0       | 3         | False      | True        | 1.0     | 1.0             | 0.0    | 0.0    | 0      |
+| False    | LCKC   | True        | 1763.0       | 906.0      | 22.0       | 3.0       | 16        | True       | False       | 1.0     | 4.0             | 2.0    | 0.0    | 1      |
+| True     | LPL    | NaN         | NaN          | NaN        | NaN        | NaN       | 13        | NaN        | NaN         | NaN     | NaN             | 1.0    | NaN    | 1      |
